@@ -33,9 +33,10 @@ class OzelSharedPreferences {
         sharedPreferences?.edit()?.putLong(TIME,zaman)?.apply()
     }
 
-    fun zamaniAl(){
+    fun zamaniAl():Long?
+    {
 
-        sharedPreferences?.getLong(TIME,0)
+       return sharedPreferences?.getLong(TIME,0)
     }
 
 }
